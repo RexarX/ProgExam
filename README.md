@@ -782,4 +782,43 @@ int main()
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
+## Шаблон, специализация
+
+Шаблон - это конструкция, которая на этапе компиляции создает обычный тип или функцию на основе аргументов.
+используется когда поведение функции для многочисленного набора разных типов одинаково или похоже,
+вместо того чтобы определять много перегрузок.
+
+Специализация - определение функций или типов для специального набора аргументов.
+
+### Примеры
+
+```C++
+// Объявление шаблона функции
+template <typename T>
+T add(T a, T b)
+{
+    return a + b;
+}
+
+//специализация шаблона функции
+template <>
+std::string add<std::string>(std::string a, std::string b)
+{
+	return a.append(b);
+}
+
+// Объявление шаблона класса
+template <typename T>
+class Box
+{
+public:
+	Box(T v) : value(v) {}
+
+private:
+    T value;
+};
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
 <p align="right">(<a href="#readme-top">Вернуться в начало</a>)</p>
