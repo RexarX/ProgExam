@@ -762,7 +762,7 @@ template <typename T>
 class Box
 {
 public:
-	Box(T v) : value(v) {}
+    Box(T v) : value(v) {}
 
 private:
     T value;
@@ -770,10 +770,10 @@ private:
 
 int main()
 {
-	// Инстанциирование шаблонной функции с типом int
-	int intResult = add<int>(3, 4);
+    // Инстанциирование шаблонной функции с типом int
+    int intResult = add<int>(3, 4);
     
-	// Инстанциирование шаблонного класса с типом int
+    // Инстанциирование шаблонного класса с типом int
     Box<int> intBox(123);
 
     return 0;
@@ -804,7 +804,7 @@ T add(T a, T b)
 template <>
 std::string add<std::string>(std::string a, std::string b)
 {
-	return a.append(b);
+    return a.append(b);
 }
 
 // Объявление шаблона класса
@@ -812,7 +812,7 @@ template <typename T>
 class Box
 {
 public:
-	Box(T v) : value(v) {}
+    Box(T v) : value(v) {}
 
 private:
     T value;
