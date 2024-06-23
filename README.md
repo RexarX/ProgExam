@@ -782,6 +782,87 @@ int main()
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
+## Преобразование повышающее
+
+Повышающее преобразование (upcasting) — это процесс приведения указателя или ссылки на объект производного класса к указателю или ссылке на базовый класс. Повышающее преобразование всегда безопасно и выполняется неявно, поскольку объект производного класса всегда является объектом базового класса.
+
+### Примеры
+```C++
+class Base {
+public:
+    virtual void show() const {
+        std::cout << "Base class" << std::endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    void show() const override {
+        std::cout << "Derived class" << std::endl;
+    }
+};
+
+void print(const Base& base) {
+    base.show();
+}
+
+Derived derivedObj;
+Base* basePtr = &derivedObj; // Повышающее преобразование
+Base& baseRef = derivedObj;  // Повышающее преобразование
+
+basePtr->show(); // Вызов виртуальной функции через указатель на базовый класс
+baseRef.show();  // Вызов виртуальной функции через ссылку на базовый класс
+
+print(derivedObj); // Передача объекта производного класса в функцию, принимающую ссылку на базовый класс
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## Преобразование понижающее
+
+Понижающее преобразование (downcasting) в — это приведение указателя или ссылки на базовый класс к указателю или ссылке на производный класс. В отличие от повышающего преобразования (upcasting), которое всегда безопасно и автоматически, понижающее преобразование может быть небезопасным, так как компилятор не может гарантировать, что указатель или ссылка на базовый класс действительно указывают на объект производного класса.
+
+Для выполнения понижающего преобразования можно использовать `dynamic_cast<>`, который выполняет проверку типа во время выполнения (runtime check). 
+
+### Примеры
+```C++
+class Base {
+public:
+    virtual ~Base() = default;
+    virtual void show() const {
+        std::cout << "Base class" << std::endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    void show() const override {
+        std::cout << "Derived class" << std::endl;
+    }
+    void specificMethod() const {
+        std::cout << "Specific method of Derived class" << std::endl;
+    }
+};
+
+void process(Base* basePtr) {
+    Derived* derivedPtr = dynamic_cast<Derived*>(basePtr);
+    if (derivedPtr) {
+        derivedPtr->specificMethod();
+    } else {
+        std::cout << "BasePtr is not pointing to a Derived object." << std::endl;
+    }
+}
+
+std::unique_ptr<Base> basePtr1 = std::make_unique<Derived>();  // Указатель на производный объект
+std::unique_ptr<Base> basePtr2 = std::make_unique<Base>();     // Указатель на базовый объект
+
+process(basePtr1.get());  // Ожидаем успешное преобразование
+process(basePtr2.get());  // Ожидаем неудачное преобразование
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+
 ## Приведение типа bit_cast<>
 
 `bit_cast<>` - это функция, представленная в стандарте C++20, которая позволяет безопасно преобразовывать одни биты данных в другие без изменения их значения или представления. Она полезна для операций с бинарными данными, такими как преобразование между числовыми типами и структурами, когда требуется строгое копирование битов. 
