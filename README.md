@@ -25,7 +25,7 @@
 		<li><a href="#%D0%B0%D1%82%D0%B4-%D1%87%D0%B8%D1%81%D0%BB%D0%BE-%D0%B8-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D1%8B-%D1%80%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8">АТД «число» и варианты реализации</a></li>
 		<li><a href="#%D0%B0%D1%82%D0%B4-%D0%B8-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">АТД и структура данных</a></li>
 		<li><a href="#%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D0%B5-%D1%86%D0%B8%D0%BA%D0%BB%D1%8B">Бесконечные циклы</a></li>
-		<li><a href="#%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0-%28library%29-%D0%B8-%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81-%28framework%29">Библиотека (library) и каркас (framework)</a></li>
+		<li><a href="#%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0-library-%D0%B8-%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81-framework">Библиотека (library) и каркас (framework)</a></li>
 		<li><a href="#%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0-%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F">Библиотека динамическая</a></li>
 		<li><a href="#%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F">Библиотека статическая</a></li>
 		<li><a href="#%D0%B1%D1%83%D1%84%D0%B5%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D1%80%D0%B8-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%B2">Буферизация при использовании потоков</a></li>
@@ -47,7 +47,7 @@
 		<li><a href="#%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C%D1%8E">Динамическое управление памятью</a></li>
 		<li><a href="#%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B0%D0%BC-%D0%B2-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B5">Доступ к именам в пространстве</a></li>
 		<li><a href="#%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D1%87%D0%BB%D0%B5%D0%BD%D0%B0%D0%BC">Доступ к членам</a></li>
-		<li><a href="#%D0%B4%D1%80%D1%83%D0%B7%D1%8C%D1%8F-%28friend%29">Друзья (friend)</a></li>
+		<li><a href="#%D0%B4%D1%80%D1%83%D0%B7%D1%8C%D1%8F-friend">Друзья (friend)</a></li>
 		<li><a href="#%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D1%8B%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B---%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Заголовочные файлы - практика использования</a></li>
 		<li><a href="#%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD-%D0%B4%D1%8B%D1%80%D1%8F%D0%B2%D1%8B%D1%85-%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D0%B9">Закон дырявых абстракций</a></li>
 		<li><a href="#%D0%B7%D0%B0%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B0">Замещение метода</a></li>
@@ -63,7 +63,7 @@
 		<li><a href="#%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0">Исключения, обработка</a></li>
 		<li><a href="#%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Использование параметров командной строки</a></li>
 		<li><a href="#%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B5%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0">Использование препроцессора</a></li>
-		<li><a href="#%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%28%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D0%B8%D1%8F-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%29">Итераторы (основные понятия, использование)</a></li>
+		<li><a href="#%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D0%B8%D1%8F-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Итераторы (основные понятия, использование)</a></li>
 		<li><a href="#%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D0%B5">Итераторы адаптирующие</a></li>
 		<li><a href="#%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B-%D0%B8-%D1%8D%D0%BA%D0%B7%D0%B5%D0%BC%D0%BF%D0%BB%D1%8F%D1%80%D1%8B">Классы и экземпляры</a></li>
 		<li><a href="#%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D0%BE%D0%B5-%D1%81%D0%BB%D0%BE%D0%B2%D0%BE-extern">Ключевое слово extern</a></li>
@@ -77,8 +77,8 @@
 		<li><a href="#%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C">Константность</a></li>
 		<li><a href="#%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80">Конструктор</a></li>
 		<li><a href="#%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80-%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Конструктор копирования</a></li>
-		<li><a href="#%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D1%8B-%28%D0%B2-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%BE%D0%B9-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B5%29">Контейнеры (в стандартной библиотеке)</a></li>
-		<li><a href="#%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D1%8B-%28%D0%BE%D1%81%D0%BD%D0%BE%D0%BD%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D0%B8%D1%8F%29">Контейнеры (осноные понятия)</a></li>
+		<li><a href="#%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D1%8B-%D0%B2-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%BE%D0%B9-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B5">Контейнеры (в стандартной библиотеке)</a></li>
+		<li><a href="#%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D1%8B-%D0%BE%D1%81%D0%BD%D0%BE%D0%BD%D1%8B%D0%B5-%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D0%B8%D1%8F">Контейнеры (осноные понятия)</a></li>
 		<li><a href="#%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Копирование объектов</a></li>
 		<li><a href="#%D0%BB%D0%BE%D0%B3%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Логирование</a></li>
 		<li><a href="#%D0%BC%D0%B0%D0%BA%D1%80%D0%BE%D1%81%D1%8B">Макросы</a></li>
@@ -87,10 +87,10 @@
 		<li><a href="#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4">Метод</a></li>
 		<li><a href="#%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8">Модель памяти</a></li>
 		<li><a href="#%D0%BD%D0%BE%D0%BB%D1%8C">Ноль</a></li>
-		<li><a href="#%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8-%28scope%29">Область видимости (scope)</a></li>
+		<li><a href="#%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8-scope">Область видимости (scope)</a></li>
 		<li><a href="#%D0%BE%D0%B1%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Обобщенное программирование</a></li>
 		<li><a href="#%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Обработка входных данных</a></li>
-		<li><a href="#%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%28%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%29">Обработка ошибок (методы)</a></li>
+		<li><a href="#%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B">Обработка ошибок (методы)</a></li>
 		<li><a href="#%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82">Объект</a></li>
 		<li><a href="#%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">Объявление</a></li>
 		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80">Оператор</a></li>
@@ -118,30 +118,30 @@
 		<li><a href="#%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%B8-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%8B%D0%B5">Потоки файловые</a></li>
 		<li><a href="#%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%B0%D0%BA%D1%82%D1%83">Программирование по контракту</a></li>
 		<li><a href="#%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%8F%D1%89%D0%B0%D1%8F-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F">Производящая функция</a></li>
-		<li><a href="#%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B0-%D0%B8%D0%BC%D0%B5%D0%BD-%28namespace%29">Пространства имен (namespace)</a></li>
+		<li><a href="#%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B0-%D0%B8%D0%BC%D0%B5%D0%BD-namespace">Пространства имен (namespace)</a></li>
 		<li><a href="#%D0%BF%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BD%D0%B8%D0%BC-%D1%82%D0%B8%D0%BF%D0%B0">Псевдоним типа</a></li>
 		<li><a href="#%D0%BF%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5-%D1%87%D0%B8%D1%81%D0%BB%D0%B0">Псевдослучайные числа</a></li>
 		<li><a href="#%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D1%8F">Раздельная компиляция</a></li>
 		<li><a href="#%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F">Рекурсия</a></li>
-		<li><a href="#%D1%81%2B%2B-%28%D0%BE%D0%B1%D1%89%D0%B8%D0%B5-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81-%D1%81%29">С++ (общие сведения, отношение с с)</a></li>
+		<li><a href="#%D1%81%2B%2B-%D0%BE%D0%B1%D1%89%D0%B8%D0%B5-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81-%D1%81">С++ (общие сведения, отношение с с)</a></li>
 		<li><a href="#%D1%81%D0%B2%D1%8F%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Связывание</a></li>
 		<li><a href="#%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">Специализация</a></li>
 		<li><a href="#%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0">Ссылка</a></li>
 		<li><a href="#%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F">Статическая переменная</a></li>
-		<li><a href="#%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%87%D0%BB%D0%B5%D0%BD-%28%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%29">Статический член (класса)</a></li>
+		<li><a href="#%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%87%D0%BB%D0%B5%D0%BD-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0">Статический член (класса)</a></li>
 		<li><a href="#%D1%81%D1%82%D0%B5%D0%BA-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2%D0%BE%D0%B2">Стек вызовов</a></li>
 		<li><a href="#%D1%81%D1%82%D1%80%D0%B0%D0%B6%D0%B8-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">Стражи включения</a></li>
-		<li><a href="#%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%28%D1%81-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8%29-%D0%B8-%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8B-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0">Строки (с-строки) и литералы, обработка</a></li>
+		<li><a href="#%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D1%81-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%B8-%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8B-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0">Строки (с-строки) и литералы, обработка</a></li>
 		<li><a href="#%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-std%3A%3Astring-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0">Строки std::string, обработка</a></li>
 		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0">Структура</a></li>
 		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Структура данных</a></li>
-		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B3%D1%80%D0%B0%D1%84-">Структура данных «граф»</a></li>
-		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE-">Структура данных «дерево»</a></li>
-		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D1%80%D1%82%D0%B5%D0%B6-">Структура данных «кортеж»</a></li>
-		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-">Структура данных «массив»</a></li>
-		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B4%D0%B2%D1%83%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D1%8B%D0%B9-">Структура данных «список двусвязный»</a></li>
-		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BE%D0%B4%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D1%8B%D0%B9-">Структура данных «список односвязный»</a></li>
-		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%85%D0%B5%D1%88-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0-">Структура данных «хеш-таблица»</a></li>
+		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B3%D1%80%D0%B0%D1%84">Структура данных «граф»</a></li>
+		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE">Структура данных «дерево»</a></li>
+		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D1%80%D1%82%D0%B5%D0%B6">Структура данных «кортеж»</a></li>
+		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2">Структура данных «массив»</a></li>
+		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B4%D0%B2%D1%83%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D1%8B%D0%B9">Структура данных «список двусвязный»</a></li>
+		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BE%D0%B4%D0%BD%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%BD%D1%8B%D0%B9">Структура данных «список односвязный»</a></li>
+		<li><a href="#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%85%D0%B5%D1%88-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0">Структура данных «хеш-таблица»</a></li>
 		<li><a href="#%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B8">Текст программы, комментарии</a></li>
 		<li><a href="#%D1%82%D0%B8%D0%BF-pod">Тип pod</a></li>
 		<li><a href="#%D1%82%D0%B8%D0%BF-void">Тип void</a></li>
@@ -160,7 +160,7 @@
 		<li><a href="#%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C">Указатель</a></li>
 		<li><a href="#%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C-%D0%BD%D0%B0-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E">Указатель на функцию</a></li>
 		<li><a href="#%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BE%D0%BC">Управление доступом</a></li>
-		<li><a href="#%D1%84%D1%83%D0%BD%D0%BA%D1%82%D0%BE%D1%80-%28%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%29">Функтор (функциональный объект)</a></li>
+		<li><a href="#%D1%84%D1%83%D0%BD%D0%BA%D1%82%D0%BE%D1%80-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82">Функтор (функциональный объект)</a></li>
 		<li><a href="#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F">Функция</a></li>
 		<li><a href="#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F---%D0%BF%D0%B5%D1%80%D0%B5%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0">Функция - перегрузка</a></li>
 		<li><a href="#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F---%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%82-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">Функция - передача параметров, возврат значения</a></li>
@@ -193,8 +193,8 @@
 		<li><a href="#%D0%BB%D1%8F%D0%BC%D0%B1%D0%B4%D1%8B-%D0%BE%D0%B1%D1%89%D0%B8%D0%B5-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F">Лямбды, общие сведения</a></li>
 		<li><a href="#%D0%BB%D1%8F%D0%BC%D0%B1%D0%B4%D1%8B-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Лямбды, хранение</a></li>
 		<li><a href="#%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Множественное наследование</a></li>
-		<li><a href="#%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%28%D0%B2-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%29">Наследование (в языке)</a></li>
-		<li><a href="#%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%28%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0%29">Наследование (ограничение доступа)</a></li>
+		<li><a href="#%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5">Наследование (в языке)</a></li>
+		<li><a href="#%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0">Наследование (ограничение доступа)</a></li>
 		<li><a href="#%D0%BE%D0%BE%D0%BF-%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B">Ооп, базовые принципы</a></li>
 		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%22%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D1%87%D0%BB%D0%B5%D0%BD%D1%83-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%22">Оператор "доступ к члену через указатель"</a></li>
 		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%22%D0%B7%D0%B0%D0%BF%D1%8F%D1%82%D0%B0%D1%8F%22">Оператор "запятая"</a></li>
@@ -207,14 +207,14 @@
 		<li><a href="#%D0%BF%D1%80%D0%B5%D0%B4%D1%83%D0%BF%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F">Предупреждения</a></li>
 		<li><a href="#%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B2%D1%8B%D1%88%D0%B0%D1%8E%D1%89%D0%B5%D0%B5">Преобразование повышающее</a></li>
 		<li><a href="#%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%B6%D0%B0%D1%8E%D1%89%D0%B5%D0%B5">Преобразование понижающее</a></li>
-		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-bit_cast-">Приведение типа bit_cast<></a></li>
-		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-const_cast-">Приведение типа const_cast<></a></li>
-		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-dynamic_cast-">Приведение типа dynamic_cast<></a></li>
-		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-reinterpret_cast-">Приведение типа reinterpret_cast<></a></li>
-		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-static_cast-">Приведение типа static_cast<></a></li>
+		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-bit_cast">Приведение типа bit_cast<></a></li>
+		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-const_cast">Приведение типа const_cast<></a></li>
+		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-dynamic_cast">Приведение типа dynamic_cast<></a></li>
+		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-reinterpret_cast">Приведение типа reinterpret_cast<></a></li>
+		<li><a href="#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%B0-static_cast">Приведение типа static_cast<></a></li>
 		<li><a href="#%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%83%D0%BD%D0%B8%D1%87%D1%82%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5">Производные объекты, конструирование и уничтожение</a></li>
 		<li><a href="#%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0">Прямая передача</a></li>
-		<li><a href="#%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%D1%8F-">Ссылка (правая)</a></li>
+		<li><a href="#%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%D1%8F">Ссылка (правая)</a></li>
 		<li><a href="#%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">Шаблон, специализация</a></li>
 	</ol>
 </details>
@@ -787,29 +787,32 @@ int main()
 Прямая передача - передача аргументов без лишнего копирования/перемещения. Используется в обёрточных функциях для передачи аргументов. Реализуется при помощи функции `std::forward<T>`, которая передает значение сохраняя его тип(lvalue/rvalue). 
 
 ### Примеры
-
 ```C++
 #include <utility> // Для std::forward
 
 // Функция process для обработки строки rvalue
-void process(std::string&& str) {
+void process(std::string&& str)
+{
     std::cout << "Обработка rvalue строки: " << str << std::endl;
 }
 
 // Функция process для обработки строки lvalue
-void process(const std::string& str) {
+void process(const std::string& str)
+{
     std::cout << "Обработка lvalue строки: " << str << std::endl;
 }
 
 // Шаблонная функция wrapper с универсальной ссылкой
 template <typename T>
-void wrapper(T&& arg) {
+void wrapper(T&& arg)
+{
     // Передаем аргумент в функцию process с помощью std::forward,
     // чтобы сохранить его тип (lvalue или rvalue)
     process(std::forward<T>(arg));
 }
 
-int main() {
+int main()
+{
     std::string s = "Hello";
     wrapper(s);            // Вызов с lvalue
     wrapper(std::move(s)); // Вызов с rvalue
@@ -825,7 +828,6 @@ int main() {
 Правая ссылка(rvalue) - ссылка на временный объект. Используется для избежания ненужного копирования(семантика перемещения), так как позволяет перемещать ресурсы одного объекта в другой.
 
 ### Примеры
-
 ```C++
 std::string str1 = "Hello, World!";
 std::cout << "str1: " << str1 << std::endl;
@@ -852,7 +854,6 @@ std::cout << "str2: " << str2 << std::endl;
 Специализация - определение функций или типов для специального набора аргументов.
 
 ### Примеры
-
 ```C++
 // Объявление шаблона функции
 template <typename T>
