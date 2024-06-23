@@ -744,4 +744,42 @@ double c = 354654.34686796345;
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
+## Инстанциирование
+
+Генерация объявления функции или типа по шаблону и его аргументам. Осуществляется во время компиляции.
+
+### Примеры
+```C++
+// Объявление шаблона функции
+template <typename T>
+T add(T a, T b)
+{
+    return a + b;
+}
+
+// Объявление шаблона класса
+template <typename T>
+class Box
+{
+public:
+	Box(T v) : value(v) {}
+
+private:
+    T value;
+};
+
+int main()
+{
+	// Инстанциирование шаблонной функции с типом int
+	int intResult = add<int>(3, 4);
+    
+	// Инстанциирование шаблонного класса с типом int
+    Box<int> intBox(123);
+
+    return 0;
+}
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
 <p align="right">(<a href="#readme-top">Вернуться в начало</a>)</p>
