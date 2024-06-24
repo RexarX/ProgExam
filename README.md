@@ -1076,57 +1076,109 @@ int main()
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
-## Заголовок
+## Ref-qualifiers for *this
 
-
+Ссылочные кваликаторы для указателя `this` - `&`, `&&`. Они определяют каким будет экземпляр объекта внутри метода - `lvalue` или `rvalue` ссылкой.
 
 ### Пример
 ```C++
-
+class A
+{
+    void foo() &
+    {
+        // *this - lvalue ссылка
+    }
+    
+    void foo() &&
+    {
+        // *this - rvalue ссылка
+    }
+}
 ```
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
-## Заголовок
+## Singleton
 
-
+Singleton - шаблон проектирования, который гарантирует, что у класса существует только один экземпляр, и предоставляет к нему глобальную точка доступа.
 
 ### Пример
 ```C++
-
+class Singleton
+{
+public:
+    static Singleton& GetInstance()
+    {
+        if(instance == nullptr)
+        {
+            instance = new Singleton;
+        }
+        return *instance;
+    }
+private:
+    static Singleton* instance;
+};
 ```
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
-## Заголовок
+## std::bitset
 
-
+`std::bitset` - класс, который позволяет выполнять операции над последовательностью битов. Однако получить доступ к отдельному биту напрямую невозможно, класс `std::bitset` возвращает класс, который выступает в качестве посредника.
 
 ### Пример
 ```C++
-
+int main()
+{
+    std::bitset<8> bitset;
+    bitset[0] = 1;
+    bitset[2] = 1;
+    std::cout << bitset << '\n'; // Вывод: 1010
+    return 0;
+}
 ```
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
-## Заголовок
+## std::forward
 
-
+`std::forward` - функция, которая используется для идеальной передачи(сохраняется тип ссылки аргумента). Используется в различных обёртках.
 
 ### Пример
 ```C++
-
+template <typename T>
+void foo(T &&arg)
+{
+  std::vector<int> var = std::forward<T>(arg);
+  ....
+}
 ```
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
-## Заголовок
+## std::move
 
-
+`std::move` - функция, которая преобразует аргумент в правую ссылку, для того чтобы вызывать семантику перемещения.
 
 ### Пример
 ```C++
+class A
+{
+public:
+    A(A&& copy);
+    
+    A& operator=(A&& value);
+};
 
+int main()
+{
+    A a;
+    //.....
+    A b(std::move(a)) // Вызывает перемещающий конструктор
+    A c;
+    c = std::move(b) // Вызывает перемещающий оператор присваивания
+    return 0;
+}
 ```
 
 <hr style="width:25%;text-align:left;margin-left:0">
