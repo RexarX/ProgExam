@@ -1175,6 +1175,10 @@ void process(T value)
     auto lambda = [](const T& val) {
         std::cout << "Value: " << val << std::endl;
     };
+
+    /* или  auto lambda = [](const auto& val) {
+                std::cout << "Value: " << val << std::endl;
+    };                                                     */
     
     lambda(value);
 }
