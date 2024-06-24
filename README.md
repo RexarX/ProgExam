@@ -782,6 +782,525 @@ int main()
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
+## Множественное наследование
+
+Позволяет классу наследовать от более чем одного базового класса. Это мощная возможность, но она может привести к сложностям, таким как конфликт имен и проблема ромбовидного наследования (Diamond Problem).
+
+### Примеры
+```C++
+class Base1
+{
+public:
+    void display1() const
+	{
+        std::cout << "Base1 display1" << std::endl;
+    }
+};
+
+class Base2
+{
+public:
+    void display2() const
+	{
+        std::cout << "Base2 display2" << std::endl;
+    }
+};
+
+class Derived : public Base1, public Base2
+{
+public:
+    void displayDerived() const
+	{
+        std::cout << "Derived display" << std::endl;
+    }
+};
+
+int main()
+{
+    Derived d;
+
+    d.display1();      // Метод из Base1
+    d.display2();      // Метод из Base2
+    d.displayDerived(); // Метод из Derived
+
+    return 0;
+}
+```
+
+### Проблемы множественного наследования
+* Конфликт имен:
+Если два базовых класса имеют методы с одинаковыми именами, производный класс должен явно указывать, какой метод вызывать, чтобы избежать неоднозначности.
+```C++
+class Base1
+{
+public:
+    void show() const
+	{
+        std::cout << "Base1 show" << std::endl;
+    }
+};
+
+class Base2
+{
+public:
+    void show() const
+	{
+        std::cout << "Base2 show" << std::endl;
+    }
+};
+
+class Derived : public Base1, public Base2
+{
+public:
+    void display() const
+	{
+        Base1::show(); // Явный вызов метода Base1
+        Base2::show(); // Явный вызов метода Base2
+    }
+};
+
+int main()
+{
+    Derived d;
+
+    d.display();
+
+    return 0;
+}
+```
+
+* Проблема ромбовидного наследования (Diamond Problem):
+Проблема ромбовидного наследования возникает, когда два базовых класса наследуют от одного общего базового класса, а производный класс наследует от этих двух базовых классов. В результате в производном классе может оказаться несколько копий членов общего базового класса.
+```C++
+class Base
+{
+public:
+    void show() const
+	{
+        std::cout << "Base show" << std::endl;
+    }
+};
+
+class Derived1 : public Base {};
+class Derived2 : public Base {};
+class Final : public Derived1, public Derived2 {};
+
+int main()
+{
+    Final f;
+
+    // f.show(); // Ошибка: неоднозначность, две копии Base
+
+    return 0;
+}
+```
+
+Решение проблемы ромбовидного наследования с помощью виртуального наследования:
+Для решения проблемы ромбовидного наследования в C++ используется виртуальное наследование. Виртуальное наследование гарантирует, что будет только одна копия членов общего базового класса.
+```C++
+class Base
+{
+public:
+    void show() const
+	{
+        std::cout << "Base show" << std::endl;
+    }
+};
+
+class Derived1 : virtual public Base {};
+class Derived2 : virtual public Base {};
+class Final : public Derived1, public Derived2 {};
+
+int main()
+{
+    Final f;
+
+    f.show(); // Нет ошибки, так как только одна копия Base
+
+    return 0;
+}
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## Наследование (в языке)
+
+Наследование позволяет одному классу (производному или подклассу) унаследовать свойства и методы другого класса (базового или суперкласса).
+
+Все остальное описано в <a href="#%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0">Наследование (ограничение доступа)</a> и <a href="#%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Множественное наследование</a>.
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## Наследование (ограничение доступа)
+
+Наследование позволяет одному классу (производному или подклассу) унаследовать свойства и методы другого класса (базового или суперкласса). При наследовании важно учитывать уровни доступа: `public`, `protected` и `private`. Эти уровни определяют, каким образом члены базового класса будут доступны в производном классе и за его пределами.
+
+### Примеры
+1. Public наследование (открытое наследование).
+* Открытые (`public`) члены базового класса остаются открытыми в производном классе.
+* Защищенные (`protected`) члены базового класса остаются защищенными в производном классе.
+* Закрытые (`private`) члены базового класса недоступны в производном классе напрямую, но они могут быть доступны через публичные или защищенные методы базового класса.
+
+```C++
+class Base
+{
+public:
+    int publicVar;
+
+protected:
+    int protectedVar;
+
+private:
+    int privateVar;
+};
+
+class Derived : public Base
+{
+public:
+    void access()
+	{
+        publicVar = 1;     // Доступен
+        protectedVar = 2;  // Доступен
+        // privateVar = 3; // Недоступен
+    }
+};
+```
+
+2. Protected наследование (защищенное наследование).
+* Открытые (`public`) члены базового класса становятся защищенными в производном классе.
+* Защищенные (`protected`) члены базового класса остаются защищенными в производном классе.
+* Закрытые (`private`) члены базового класса недоступны в производном классе напрямую.
+
+```C++
+class Base
+{
+public:
+    int publicVar;
+
+protected:
+    int protectedVar;
+	
+private:
+    int privateVar;
+};
+
+class Derived : protected Base
+{
+public:
+    void access()
+	{
+        publicVar = 1;     // Доступен как защищенный член
+        protectedVar = 2;  // Доступен
+        // privateVar = 3; // Недоступен
+    }
+};
+
+int main()
+{
+    Derived obj;
+    // obj.publicVar = 1; // Недоступен, так как publicVar теперь защищенный
+    return 0;
+}
+```
+
+3. Private наследование (закрытое наследование).
+* Открытые (`public`) члены базового класса становятся закрытыми в производном классе.
+* Защищенные (`protected`) члены базового класса становятся закрытыми в производном классе.
+* Закрытые (`private`) члены базового класса недоступны в производном классе напрямую.
+
+```C++
+class Base
+{
+public:
+    int publicVar;
+
+protected:
+    int protectedVar;
+
+private:
+    int privateVar;
+};
+
+class Derived : private Base
+{
+public:
+    void access()
+	{
+        publicVar = 1;     // Доступен как закрытый член
+        protectedVar = 2;  // Доступен как закрытый член
+        // privateVar = 3; // Недоступен
+    }
+};
+
+int main()
+{
+    Derived obj;
+    // obj.publicVar = 1; // Недоступен, так как publicVar теперь закрытый
+    return 0;
+}
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## ООП, базовые принципы
+
+Объектно-ориентированное программирование (ООП) — это парадигма программирования, основанная на концепции "объектов", которые могут содержать данные и код: данные в виде полей (часто называемых атрибутами или свойствами), и код в виде процедур (часто называемых методами). Основные принципы ООП включают инкапсуляцию, наследование, полиморфизм и абстракцию.
+
+### Примеры
+* Инкапсуляция:
+Заключается в скрытии внутреннего состояния объекта и предоставлении доступа к нему только через методы. Это позволяет защитить данные от прямого доступа и изменения извне.
+```C++
+class Person
+{
+public:
+    // Конструктор
+    Person(std::string n, int a) : name(n), age(a) {}
+
+    // Методы для доступа к данным
+    void setName(std::string n)
+	{
+		name = n;
+	}
+
+    std::string getName() const
+	{
+		return name;
+	}
+
+    void setAge(int a)
+	{ 
+		if (a > 0) {
+			age = a;
+		}
+	}
+
+	int getAge() const
+	{
+		return age;
+	}
+
+private:
+    std::string name;
+    int age;
+};
+
+int main()
+{
+    Person person("Alice", 30);
+    person.setAge(31);
+
+    std::cout << person.getName() << " is " << person.getAge() << " years old." << std::endl;
+
+    return 0;
+}
+```
+
+* Наследование:
+Позволяет одному классу (производному или подклассу) унаследовать свойства и методы другого класса (базового или суперкласса). Это способствует повторному использованию кода и организации классов в иерархии.
+```C++
+class Animal
+{
+public:
+    void eat()
+	{
+        std::cout << "Eating..." << std::endl;
+    }
+};
+
+class Dog : public Animal
+{
+public:
+    void bark()
+	{
+        std::cout << "Barking..." << std::endl;
+    }
+};
+
+int main()
+{
+    Dog myDog;
+
+    myDog.eat(); // Метод базового класса
+    myDog.bark(); // Метод производного класса
+
+    return 0;
+}
+```
+
+* Полиморфизм:
+Позволяет использовать один и тот же интерфейс для разных типов данных. Это может быть реализовано через виртуальные функции, позволяя производным классам переопределять методы базового класса.
+```C++
+class Shape
+{
+public:
+    virtual void draw() const
+	{
+        std::cout << "Drawing a shape" << std::endl;
+    }
+};
+
+class Circle : public Shape
+{
+public:
+    void draw() const override
+	{
+        std::cout << "Drawing a circle" << std::endl;
+    }
+};
+
+class Square : public Shape
+{
+public:
+    void draw() const override
+	{
+        std::cout << "Drawing a square" << std::endl;
+    }
+};
+
+void displayShape(const Shape& shape)
+{
+    shape.draw();
+}
+
+int main() {
+    Circle circle;
+    Square square;
+
+    displayShape(circle); // Вызовет Circle::draw
+    displayShape(square); // Вызовет Square::draw
+
+    return 0;
+}
+```
+
+* Абстракция:
+Заключается в создании упрощенной модели реальности путем выделения наиболее значимых характеристик и поведения, скрывая при этом сложные детали реализации. Это позволяет работать с концепциями и моделями вместо конкретных реализаций.
+```C++
+class AbstractDevice
+{
+public:
+    virtual void start() = 0; // Чисто виртуальная функция
+    virtual void stop() = 0;  // Чисто виртуальная функция
+    virtual ~AbstractDevice() = default; // Виртуальный деструктор
+};
+
+class Printer : public AbstractDevice
+{
+public:
+    void start() override
+	{
+        std::cout << "Printer starting..." << std::endl;
+    }
+
+    void stop() override
+	{
+        std::cout << "Printer stopping..." << std::endl;
+    }
+};
+
+int main()
+{
+    Printer printer;
+
+    printer.start();
+    printer.stop();
+
+    return 0;
+}
+```
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## Оператор "доступ к члену через указатель"
+
+Оператор "доступ к члену через указатель" `->` используется для доступа к членам (данным и методам) объекта через указатель на этот объект. Он сочетает в себе разыменование указателя и доступ к члену объекта.
+
+### Примеры
+```C++
+class MyClass
+{
+public:
+    int data;
+    void show() const
+	{
+        std::cout << "Data: " << data << std::endl;
+    }
+};
+
+int main()
+{
+    MyClass obj;
+    obj.data = 42;
+
+    MyClass* ptr = &obj; // Указатель на объект
+
+    ptr->data = 100;     // Доступ к члену данных через указатель
+    ptr->show();         // Вызов метода через указатель
+
+    return 0;
+}
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## Оператор "запятая"
+
+Оператор запятая `,`, также известный как оператор последовательности, используется для вычисления двух выражений и возвращения значения второго. Оператор запятая имеет очень низкий приоритет, поэтому он часто используется в контексте циклов, выражений и вызовов функций.
+
+### Примеры
+* Основной синтаксис и поведение:
+```C++
+int main()
+{
+    int x = 10;
+    int y = (x + 1, x + 2); // Сначала вычисляется x + 1, затем x + 2, и результат второго выражения присваивается y
+
+    std::cout << "y: " << y << std::endl; // Выводит "y: 12"
+    return 0;
+}
+```
+
+* Использование в циклах:
+```C++
+int main()
+{
+    for (int i = 0, j = 10; i < j; ++i, --j) {
+        std::cout << "i: " << i << ", j: " << j << std::endl;
+    }
+
+    return 0;
+}
+```
+
+* Использование в выражениях:
+```C++
+int main()
+{
+    int a = 0;
+    int b = (a = 5, a + 10); // Сначала a присваивается значение 5, затем вычисляется выражение a + 10
+
+    std::cout << "b: " << b << std::endl; // Выводит "b: 15"
+    return 0;
+}
+```
+
+### Особенности и ограничения
+* Оператор запятая имеет самый низкий приоритет среди всех операторов в C++, поэтому выражения, разделенные запятыми, вычисляются в строгой последовательности слева направо.
+* Оператор запятая может быть полезен в макросах для объединения нескольких операций в одну:
+```C++
+#define MULTIPLY(a, b) ((a) * (b))
+
+int main()
+{
+    int result = (MULTIPLY(2 + 3, 3 + 4), 100);
+    std::cout << "result: " << result << std::endl; // Выводит "result: 100"
+    return 0;
+}
+```
+
+* Использование оператора запятая может сделать код менее читаемым. Поэтому его следует использовать с осторожностью и только в тех случаях, когда это действительно необходимо.
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
 ## Оператор "приведение к типу"
 
 Оператор приведения к типу `()` позволяет выполнить явное преобразование к другому типу. Можно определять для пользовательских типов: `operator typename ()`.
@@ -793,7 +1312,7 @@ class Example
 public:
 	Example(std::string name)
 	 : name_(name)
-	 {
+	{
 	}
 
 	operator const char* () // Оператор приведения класса Example к типу const char*
@@ -820,7 +1339,7 @@ int main()
 
 ## Оператор "разыменование"
 
-Оператор разыменование позволяет получить доступ к объекту, на который указывает указатель для чтения или изменения значения;
+Оператор разыменование позволяет получить доступ к объекту, на который указывает указатель для чтения или изменения значения.
 
 ### Примеры
 ```C++
