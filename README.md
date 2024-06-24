@@ -782,6 +782,156 @@ int main()
 
 <hr style="width:25%;text-align:left;margin-left:0">
 
+## Лямбды, generic
+
+Появились в C++20. Можно создать лямбда-выражение, которое будет работать с различными типами данных, а не только с конкретными типами.
+
+### Пример
+```C++
+template <typename T>
+void process(T value)
+{
+    auto lambda = [](const T& val) {
+        std::cout << "Value: " << val << std::endl;
+    };
+    
+    lambda(value);
+}
+
+int main()
+{
+    process(5); // Выведет "Value: 5"
+    process("Hello"); // Выведет "Value: Hello"
+    
+    return 0;
+}
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## Лямбды, захват
+
+Лямбда-выражения могут захватывать переменные из своей окружающей среды. Захват может быть сделан по значению или по ссылке.
+
+### Пример
+```C++
+int main()
+{
+    int x = 10;
+    int y = 20;
+
+    auto capture_by_value = [x, y]() {
+        return x + y;
+    };
+
+    auto capture_by_reference = [&x, &y]() {
+        return x + y;
+    };
+
+    x = 15;
+    y = 25;
+
+    std::cout << "Capture by value: " << capture_by_value() << std::endl;  // 30 (10 + 20)
+    std::cout << "Capture by reference: " << capture_by_reference() << std::endl; // 40 (15 + 25)
+
+    return 0;
+}
+```
+
+Лямбда может захватывать все переменные из окружающей области видимости, используя `=` для захвата по значению или `&` для захвата по ссылке.
+
+### Пример
+```C++
+int main()
+{
+    int x = 5;
+    int y = 10;
+
+    // Захват всех переменных по значению
+    auto capture_all_by_value = [=]() {
+        return x + y;
+    };
+
+    // Захват всех переменных по ссылке
+    auto capture_all_by_reference = [&]() {
+        return x + y;
+    };
+
+    x = 20;
+    y = 30;
+
+    std::cout << "Capture all by value: " << capture_all_by_value() << std::endl;  // 15 (5 + 10)
+    std::cout << "Capture all by reference: " << capture_all_by_reference() << std::endl; // 50 (20 + 30)
+
+    return 0;
+}
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## Лямбды, использование
+
+Они полезны для создания временных функций, которые могут быть переданы в качестве параметров другим функциям или сохранены для последующего использования.
+
+Cмотреть <a href="#%D0%BB%D1%8F%D0%BC%D0%B1%D0%B4%D1%8B-generic">Лямбды, generic</a>, <a href="#%D0%BB%D1%8F%D0%BC%D0%B1%D0%B4%D1%8B-%D0%B7%D0%B0%D1%85%D0%B2%D0%B0%D1%82">Лямбды, захват</a>, <a href="#%D0%BB%D1%8F%D0%BC%D0%B1%D0%B4%D1%8B-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Лямбды, использование</a>, <a href="#%D0%BB%D1%8F%D0%BC%D0%B1%D0%B4%D1%8B-%D0%BE%D0%B1%D1%89%D0%B8%D0%B5-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F">Лямбды, общие сведения</a>, <a href="#%D0%BB%D1%8F%D0%BC%D0%B1%D0%B4%D1%8B-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Лямбды, хранение</a>.
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## Лямбды, общие сведения
+
+Лямбда-выражения - это анонимные функции, которые могут захватывать переменные из своей окружающей среды. Они позволяют создавать функции на месте и передавать их как параметры, возвращать их из функций или хранить в переменных. Они могут хранить захваченные переменные, что делает их полезными для написания компактного и выразительного кода.
+
+Лямбда-выражение состоит из трех основных частей:
+* Захват (capture list)
+* Параметры (parameter list)
+* Тело (body)
+```[захват] (параметры) -> возвращаемый_тип { тело }```
+
+### Пример
+```C++
+int main()
+{
+    auto add = [](int a, int b) -> int {
+        return a + b;
+    };
+
+    std::cout << "3 + 4 = " << add(3, 4) << std::endl; // Вывод: 3 + 4 = 7
+    return 0;
+}
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
+## Лямбды, хранение
+
+Лямбды могут быть сохранены в переменных, функторах или стандартных контейнерах, таких как `std::function`. `std::function` является обобщенным типом, который может хранить лямбды, функции и функторы с определенным типом подписи.
+
+### Пример
+```C++
+int main()
+{
+    int a = 5;
+    int b = 3;
+
+    // Лямбда сохраненная в переменную
+    auto multiply = [a, b]() {
+        return a * b;
+    };
+
+    // Лямбда сохраненная в std::function
+    std::function<int(int, int)> add = [](int x, int y) {
+        return x + y;
+    };
+
+    std::cout << "Multiply: " << multiply() << std::endl;  // Вывод: 15 (5 * 3)
+    std::cout << "Add: " << add(4, 2) << std::endl;  // Вывод: 6 (4 + 2)
+
+    return 0;
+}
+```
+
+<hr style="width:25%;text-align:left;margin-left:0">
+
 ## Множественное наследование
 
 Позволяет классу наследовать от более чем одного базового класса. Это мощная возможность, но она может привести к сложностям, таким как конфликт имен и проблема ромбовидного наследования (Diamond Problem).
