@@ -942,7 +942,7 @@ class Base1
 {
 public:
     void display1() const
-	{
+    {
         std::cout << "Base1 display1" << std::endl;
     }
 };
@@ -951,7 +951,7 @@ class Base2
 {
 public:
     void display2() const
-	{
+    {
         std::cout << "Base2 display2" << std::endl;
     }
 };
@@ -960,7 +960,7 @@ class Derived : public Base1, public Base2
 {
 public:
     void displayDerived() const
-	{
+    {
         std::cout << "Derived display" << std::endl;
     }
 };
@@ -985,7 +985,7 @@ class Base1
 {
 public:
     void show() const
-	{
+    {
         std::cout << "Base1 show" << std::endl;
     }
 };
@@ -994,7 +994,7 @@ class Base2
 {
 public:
     void show() const
-	{
+    {
         std::cout << "Base2 show" << std::endl;
     }
 };
@@ -1003,7 +1003,7 @@ class Derived : public Base1, public Base2
 {
 public:
     void display() const
-	{
+    {
         Base1::show(); // Явный вызов метода Base1
         Base2::show(); // Явный вызов метода Base2
     }
@@ -1026,7 +1026,7 @@ class Base
 {
 public:
     void show() const
-	{
+    {
         std::cout << "Base show" << std::endl;
     }
 };
@@ -1052,7 +1052,7 @@ class Base
 {
 public:
     void show() const
-	{
+    {
         std::cout << "Base show" << std::endl;
     }
 };
@@ -1108,7 +1108,7 @@ class Derived : public Base
 {
 public:
     void access()
-	{
+    {
         publicVar = 1;     // Доступен
         protectedVar = 2;  // Доступен
         // privateVar = 3; // Недоступен
@@ -1138,7 +1138,7 @@ class Derived : protected Base
 {
 public:
     void access()
-	{
+    {
         publicVar = 1;     // Доступен как защищенный член
         protectedVar = 2;  // Доступен
         // privateVar = 3; // Недоступен
@@ -1175,7 +1175,7 @@ class Derived : private Base
 {
 public:
     void access()
-	{
+    {
         publicVar = 1;     // Доступен как закрытый член
         protectedVar = 2;  // Доступен как закрытый член
         // privateVar = 3; // Недоступен
@@ -1208,26 +1208,26 @@ public:
 
     // Методы для доступа к данным
     void setName(std::string n)
-	{
-		name = n;
-	}
+    {
+	name = n;
+    }
 
     std::string getName() const
-	{
-		return name;
-	}
+    {
+	return name;
+    }
 
     void setAge(int a)
-	{ 
-		if (a > 0) {
-			age = a;
-		}
+    { 
+	if (a > 0) {
+	    age = a;
 	}
+    }
 
-	int getAge() const
-	{
-		return age;
-	}
+    int getAge() const
+    {
+	return age;
+    }
 
 private:
     std::string name;
@@ -1252,7 +1252,7 @@ class Animal
 {
 public:
     void eat()
-	{
+    {
         std::cout << "Eating..." << std::endl;
     }
 };
@@ -1261,7 +1261,7 @@ class Dog : public Animal
 {
 public:
     void bark()
-	{
+    {
         std::cout << "Barking..." << std::endl;
     }
 };
@@ -1284,7 +1284,7 @@ class Shape
 {
 public:
     virtual void draw() const
-	{
+    {
         std::cout << "Drawing a shape" << std::endl;
     }
 };
@@ -1293,7 +1293,7 @@ class Circle : public Shape
 {
 public:
     void draw() const override
-	{
+    {
         std::cout << "Drawing a circle" << std::endl;
     }
 };
@@ -1302,7 +1302,7 @@ class Square : public Shape
 {
 public:
     void draw() const override
-	{
+    {
         std::cout << "Drawing a square" << std::endl;
     }
 };
@@ -1312,7 +1312,8 @@ void displayShape(const Shape& shape)
     shape.draw();
 }
 
-int main() {
+int main()
+{
     Circle circle;
     Square square;
 
@@ -1338,12 +1339,12 @@ class Printer : public AbstractDevice
 {
 public:
     void start() override
-	{
+    {
         std::cout << "Printer starting..." << std::endl;
     }
 
     void stop() override
-	{
+    {
         std::cout << "Printer stopping..." << std::endl;
     }
 };
@@ -1371,7 +1372,7 @@ class MyClass
 public:
     int data;
     void show() const
-	{
+    {
         std::cout << "Data: " << data << std::endl;
     }
 };
@@ -1460,15 +1461,15 @@ int main()
 class Example
 {
 public:
-	Example(std::string name)
-	 : name_(name)
-	{
-	}
+    Example(std::string name)
+     : name_(name)
+    {
+    }
 
-	operator const char* () // Оператор приведения класса Example к типу const char*
-	{
-		return name_.c_str();
-	}
+    operator const char* () // Оператор приведения класса Example к типу const char*
+    {
+	return name_.c_str();
+    }
 	
 private:
 	std::string name_;
@@ -1476,12 +1477,12 @@ private:
 
 int main()
 {
-	double a 5.3;
-	int b = (int)(a); // Приведение встроенных типов
+    double a 5.3;
+    int b = (int)(a); // Приведение встроенных типов
 	
-	Example c("example");
-	std::cout << (const char*)(c) << '\n'; // Приведение пользовательского типа
-	return 0;
+    Example c("example");
+    std::cout << (const char*)(c) << '\n'; // Приведение пользовательского типа
+    return 0;
 }
 ```
 
@@ -1495,11 +1496,11 @@ int main()
 ```C++
 int main()
 {
-	int a = 10;
-	int* ptr = &a;
-	std::cout << *ptr << '\n';
-	*ptr = 4;
-	std::cout << *ptr << '\n';
+    int a = 10;
+    int* ptr = &a;
+    std::cout << *ptr << '\n';
+    *ptr = 4;
+    std::cout << *ptr << '\n';
 }
 //Вывод:
 //10
@@ -1517,20 +1518,20 @@ int main()
 class Example
 {
 public:
-	Example& operator=(const Example& value)
-	{
-		if ( *this == value ) return *this;
-		data_ = value.data_;
-		return *this;
-	}
+    Example& operator=(const Example& value)
+    {
+	if ( *this == value ) return *this;
+	data_ = value.data_;
+	return *this;
+    }
 
-	Example& operator=(Example&& value)
-	{
-		if ( *this == value ) return *this;
-		std::swap(copy.data_, data_);
-		copy.data_.Clear(); 
-		return *this;
-	}
+    Example& operator=(Example&& value)
+    {
+	if ( *this == value ) return *this;
+	std::swap(copy.data_, data_);
+	copy.data_.Clear(); 
+	return *this;
+    }
 	
 private:
 	std::vector data_;
@@ -1538,13 +1539,13 @@ private:
 
 int main()
 {
-	Example arr1;
-	//....
-	Example arr2;
-	arr2 = arr1; // Вызывается обычный оператор присваивания
-	Example arr3;
-	arr3 = std::move(arr1); // Вызывается перемещающий оператор присваивания
-	return 0;
+    Example arr1;
+    //....
+    Example arr2;
+    arr2 = arr1; // Вызывается обычный оператор присваивания
+    Example arr3;
+    arr3 = std::move(arr1); // Вызывается перемещающий оператор присваивания
+    return 0;
 }
 ```
 
@@ -1559,18 +1560,18 @@ int main()
 class Example
 {
 public:
-	//....
-	Example(Example&& copy)
-	{
-		std::swap(copy.data_, data_); 
-	}
+    //....
+    Example(Example&& copy)
+    {
+	std::swap(copy.data_, data_); 
+    }
 	
-	Example& operator=(Example&& value)
-	{
-		if ( *this == value ) return *this;
-		std::swap(copy.data_, data_);
-		copy.data_.Clear(); 
-	}
+    Example& operator=(Example&& value)
+    {
+	if ( *this == value ) return *this;
+	std::swap(copy.data_, data_);
+	copy.data_.Clear(); 
+    }
 	
 private:
 	std::vector data_;
@@ -1578,12 +1579,12 @@ private:
 
 int main()
 {
-	Example arr1;
-	//....
-	Example arr2(std::move(arr1)); // После этой операции arr1 будет пустым,а arr2 будет содержать значения arr1 до операции
-	Example arr3;
-	arr3 = std::move(arr2); // Аналогично операции выше
-	return 0;
+    Example arr1;
+    //....
+    Example arr2(std::move(arr1)); // После этой операции arr1 будет пустым,а arr2 будет содержать значения arr1 до операции
+    Example arr3;
+    arr3 = std::move(arr2); // Аналогично операции выше
+    return 0;
 }
 ```
 
@@ -1598,26 +1599,26 @@ int main()
 class Base
 {
 public:
-	int Add(double item)
-	{
-		//... добавление элемента
-		if(fail){
-			return -1;
-		}
-		return index;
+    int Add(double item)
+    {
+	//... добавление элемента
+	if(fail){
+		return -1;
 	}
-	// Функция должна возвращать индекс только что добавленного элемента или -1 при ошибке при добавлении
+	return index;
+    }
+    // Функция должна возвращать индекс только что добавленного элемента или -1 при ошибке при добавлении
 };
 
 class Derived : public Base
 {
 public:
-	int Add(double item) override 
-	{
-		//... добавление элемента
-		return -1;
-	}
-	// Критерий подстановки не выполняется, так как функция возвращает -1 даже при успешной вставке элемента, хотя должна возвращать индекс элемента
+    int Add(double item) override 
+    {
+	//... добавление элемента
+	return -1;
+    }
+    // Критерий подстановки не выполняется, так как функция возвращает -1 даже при успешной вставке элемента, хотя должна возвращать индекс элемента
 };
 ```
 
@@ -1631,19 +1632,20 @@ public:
 ```C++
 struct A
 {
-	char a; // 1 байт
-	// 3 незначащих байта
-	int b; // 4
-	char c; // 1
-	// 3 незначащих байта
+    char a; // 1 байт
+    // 3 незначащих байта
+    int b; // 4
+    char c; // 1
+    // 3 незначащих байта
 };
 // размер 12 байтов
 
-struct B{
-	int a; // 1 
-	char b; // 1
-	// 2 незначащих байта
-	int c; // 4
+struct B
+{
+    int a; // 1 
+    char b; // 1
+    // 2 незначащих байта
+    int c; // 4
 };
 // размер 8 байтов
 ```
@@ -1658,25 +1660,25 @@ struct B{
 ```C++
 struct A
 {
-	int a; // 4 байта
-	int b; // 4 байта
-	int c; // 4 байта
+    int a; // 4 байта
+    int b; // 4 байта
+    int c; // 4 байта
 }
 // размер 12 байтов
 
 struct alignas(16) B
 {
-	int a; // 4 байта
-	int b; // 4 байта
-	int c; // 4 байта
-	// 4 байта для выравнивания
+    int a; // 4 байта
+    int b; // 4 байта
+    int c; // 4 байта
+    // 4 байта для выравнивания
 }
 // размер 16 байтов
 
 int main()
 {
-	std::cout << alignof(A) << ' ' << alignof(B) << '\n';
-	return 0;
+    std::cout << alignof(A) << ' ' << alignof(B) << '\n';
+    return 0;
 };
 // Вывод:
 // 12 16
