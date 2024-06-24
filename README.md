@@ -1642,7 +1642,7 @@ struct A
 
 struct B
 {
-    int a; // 1 
+    char a; // 1 
     char b; // 1
     // 2 незначащих байта
     int c; // 4
@@ -1832,6 +1832,7 @@ class Base
 {
 public:
     virtual ~Base() = default;
+
     virtual void show() const
     {
         std::cout << "Base class" << std::endl;
@@ -1845,6 +1846,7 @@ public:
     {
         std::cout << "Derived class" << std::endl;
     }
+
     void specificMethod() const
     {
         std::cout << "Specific method of Derived class" << std::endl;
@@ -2103,6 +2105,7 @@ public:
     {
         std::cout << "Конструктор Base" << std::endl;
     }
+
     virtual ~Base()
     {
         std::cout << "Деструктор Base" << std::endl;
@@ -2117,6 +2120,7 @@ public:
     {
         std::cout << "Конструктор Derived" << std::endl;
     }
+
     ~Derived()
     {
         std::cout << "Деструктор Derived" << std::endl;
