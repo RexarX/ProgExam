@@ -195,11 +195,11 @@
 		<li><a href="#%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Множественное наследование</a></li>
 		<li><a href="#%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5">Наследование (в языке)</a></li>
 		<li><a href="#%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0">Наследование (ограничение доступа)</a></li>
-		<li><a href="#%D0%BE%D0%BE%D0%BF-%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B">Ооп, базовые принципы</a></li>
-		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%22%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D1%87%D0%BB%D0%B5%D0%BD%D1%83-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%22">Оператор "доступ к члену через указатель"</a></li>
-		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%22%D0%B7%D0%B0%D0%BF%D1%8F%D1%82%D0%B0%D1%8F%22">Оператор "запятая"</a></li>
-		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%22%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83%22">Оператор "приведение к типу"</a></li>
-		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%22%D1%80%D0%B0%D0%B7%D1%8B%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%22">Оператор "разыменование"</a></li>
+		<li><a href="#%D0%BE%D0%BE%D0%BF-%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B">ООП, базовые принципы</a></li>
+		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D1%87%D0%BB%D0%B5%D0%BD%D1%83-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C">Оператор "доступ к члену через указатель"</a></li>
+		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%B7%D0%B0%D0%BF%D1%8F%D1%82%D0%B0%D1%8F">Оператор "запятая"</a></li>
+		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83">Оператор "приведение к типу"</a></li>
+		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%80%D0%B0%D0%B7%D1%8B%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Оператор "разыменование"</a></li>
 		<li><a href="#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%BF%D1%80%D0%B8%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B0%D1%8E%D1%89%D0%B8%D0%B9">Оператор присваивания перемещающий</a></li>
 		<li><a href="#%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5">Перемещение</a></li>
 		<li><a href="#%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D1%8B%D0%B9-%D0%BA%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9">Подстановочный критерий</a></li>
@@ -788,18 +788,19 @@ int main()
 
 ### Примеры
 ```C++
-
 class Example
 {
 public:
 	Example(std::string name)
-	 : name_(name) {
+	 : name_(name)
+	 {
 	}
 
 	operator const char* () // Оператор приведения класса Example к типу const char*
 	{
 		return name_.c_str();
 	}
+	
 private:
 	std::string name_;
 };
@@ -959,7 +960,8 @@ public:
 
 ### Примеры
 ```C++
-struct A{
+struct A
+{
 	char a; // 1 байт
 	// 3 незначащих байта
 	int b; // 4
@@ -985,14 +987,16 @@ struct B{
 
 ### Примеры
 ```C++
-struct A{
+struct A
+{
 	int a; // 4 байта
 	int b; // 4 байта
 	int c; // 4 байта
 }
 // размер 12 байтов
 
-struct alignas(16) B{
+struct alignas(16) B
+{
 	int a; // 4 байта
 	int b; // 4 байта
 	int c; // 4 байта
@@ -1049,7 +1053,7 @@ int main()
 }
 ```
 
-*Потенциально некорректное использование указателей:
+* Потенциально некорректное использование указателей:
 ```C++
 int main()
 {
@@ -1075,9 +1079,7 @@ int main()
 Управление предупреждениями:
 
 * В некоторых компиляторах можно настроить уровень предупреждений.
-
 * Можно подавлять отдельные предупреждения.
-
 * Использование атрибутов в C++.
 
 ### Примеры
@@ -1091,7 +1093,7 @@ int main()
 
 int main()
 {
-    gets(nullptr); // Предупреждение подавлено
+	gets(nullptr); // Предупреждение подавлено
     return 0;
 }
 
